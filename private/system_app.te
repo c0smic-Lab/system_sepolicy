@@ -76,6 +76,9 @@ get_prop(system_app, enable_16k_pages_prop)
 # Allow developer settings to check virtualization capabilities
 get_prop(system_app, hypervisor_prop)
 
+# Allow systemapps to check incremental progress 
+get_prop(system_app, incremental_prop)
+
 # Create /data/anr/traces.txt.
 allow system_app anr_data_file:dir ra_dir_perms;
 allow system_app anr_data_file:file create_file_perms;
